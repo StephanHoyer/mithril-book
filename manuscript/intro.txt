@@ -1,3 +1,50 @@
 # Intoduction
 
-Mithril is awesome!
+I'm guessing you've heard about mithril at some point,
+if not, get out from that rock you've been living under.
+
+The gist of it is that there's a new framework in town
+and oh boy is it wiping the floor with your
+friends Angular and React
+in terms of rendering performance,
+load time, redrawing, and more.
+
+It achieves this by mapping HTML onto javascript,
+in stead of going the other way round
+(like those friends we discussed earlier).
+
+
+
+# Hello World in mithril
+```html
+<!DOCTYPE html>
+<script src="mithril.min.js"></script>
+<script>
+m.mount(document.body, {
+    view: function () {
+        return m('h1', 'Hello World!');
+    }
+});
+</script>
+```
+Yes, this is valid HTML 5!
+According to the specs, the `<html>`, `<head>`
+and `<body>` tags can be omitted,
+but their respective DOM elements will still be there
+implicitly when a browser renders that markup.
+
+I would like you to notice the absolute lack of
+boilerplate code in this example. All you need to
+do to start using mithril is include it in your page.
+
+Compare this to Angular where in order to start you
+need to first familiarize yourself with multiple
+programming patterns (services, dependency injection, etc.)
+and you wind up with one of the most newbie
+friendly frameworks around. In fact, as you will come
+to see while reading this book, you don't really need
+to learn mithril as much as you need to learn javascript.
+
+That being said this book will delve into some of the
+best practices of mithril and give you some
+very nice patterns to know and have in your repertoire.
