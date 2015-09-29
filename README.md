@@ -1,5 +1,7 @@
 # mithril-book
 
+[![Join the chat at https://gitter.im/StephanHoyer/mithril-book](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/StephanHoyer/mithril-book?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Rough Outline
 
 * Basic intro
