@@ -1,0 +1,33 @@
+{
+  "name": "mithril-book",
+  "version": "0.0.1",
+  "description": "A book to introduce mithril to newcomers",
+  "main": "index.js",
+  "dependencies": {
+    "watch": "^0.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:clean": "rm -rf book/",
+    "build:mkdir": "mkdir book",
+    "build:concat": "cat ./manuscript/*.txt > ./book/mithril-book.md", 
+    "build:epub": "pandoc -o book/mithril-book.epub ./book/mithril-book.md  --toc --toc-depth=2",
+    "build": "npm run build:clean && npm run build:mkdir && npm run build:concat && npm run build:epub",
+    "watch": "watch 'npm run build' ./manuscript/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanHoyer/mithril-book.git"
+  },
+  "keywords": [
+    "mithril",
+    "book",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephanHoyer/mithril-book/issues"
+  },
+  "homepage": "https://github.com/StephanHoyer/mithril-book#readme"
+}
