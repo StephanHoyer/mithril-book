@@ -15,7 +15,7 @@ in stead of going the other way round
 
 
 
-# Hello World in mithril
+## Hello World in mithril
 ```html
 <!DOCTYPE html>
 <script src="mithril.min.js"></script>
